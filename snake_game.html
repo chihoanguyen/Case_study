@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "Game_snake.js"></script>
+    <script src="Score.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            width:100%;
+        }
+        body {
+            background-image: url("cach-lam-ran-san-moi-python-63730327155.8363.jpg");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas {
+            background: black;
+            border: 1px solid white;
+        }
+        div{
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<audio src="NhacNenGamePikachu-VA-4698057.mp3" autoplay loop></audio>
+<canvas width="500px" height="500px" id="game"></canvas>
+<div style="background: cadetblue">
+<p id="123">Score</p>
+<p style="color: red" id="high-score">Điểm cao nhất</p>
+</div>
+<script>
+    let canvas = document.getElementById('game');
+    let context = canvas.getContext('2d');
+    let grid = 20;
+    let snake = {
+        x: 160,
+        y: 160,
+        dx: grid,
+        dy: 0,
+        cells: [],
+        maxCells: 3,
+        score:0
+    };
+    let count = 0;
+    let apple = {
+        x: 320,
+        y: 320
+    };
+    document.getElementById('high-score').innerHTML = 'Điểm cao nhất : '+ loadData();
+    requestAnimationFrame(loop)
+</script>
+</body>
+</html>
