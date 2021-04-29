@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+
+    <link rel="stylesheet" href="Start.css">
+</head>
+<body>
+<img src="mute.png">
+<audio controls src="ChocoboRacingMithrilMines-HoaTau-3316613.mp3" autoplay loop>
+</audio>
+<div >
+<button id="id1" style="width:100px;height:50px" onclick="startGame()">Start</button>
+<button id="id2" style="width:100px;height:50px" onclick="guideplay()" >Guid Play</button>
+</div>
+<p id="auto" style="display: none;color:red">Dùng các phím mũi tên để di chuyển con rắn, nhớ tránh xa vật cản nhé :))</p>
+<script>
+    function startGame(){
+        window.location.href = "New_game.html";
+    }
+    let a = document.getElementById('auto')
+    function guideplay(){
+        if(document.getElementById('auto').style.display === 'none'){
+        a.style.display = 'block';
+    }
+        else {
+            a.style.display = 'none'
+        }
+    }
+    function randomHex() {
+        return Math.floor(Math.random() * 255);
+    }
+    function randomColor() {
+        let red = randomHex();
+        let blue = randomHex();
+        let green = randomHex();
+        return "rgb(" + red + "," + blue + "," + green + ")";
+    }
+    function changeColor() {
+        document.getElementById('id1').style.backgroundColor = randomColor()
+        document.getElementById('id2').style.backgroundColor = randomColor()
+    }
+    setInterval(changeColor,500)
+</script>
+</body>
+</html>

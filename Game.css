@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    width:100%;
+}
+body {
+    background-image: url("cach-lam-ran-san-moi-python-63730327155.8363.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    background: black;
+    border: 1px solid white;
+}
+div{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.class3 {
+
+    background-color: #004A7F;
+
+    -webkit-border-radius: 10px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: Arial;
+
+    font-size: 20px;
+
+    padding: 5px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+}
+@-webkit-keyframes glowing {
+    0% { background-color: #004a7f; -webkit-box-shadow: 0 0 3px #004a7f; }
+    50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004a7f; -webkit-box-shadow: 0 0 3px #004a7f; }
+}
+
+@-moz-keyframes glowing {
+    0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004a7f; }
+    50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004a7f; }
+}
+
+@-o-keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+@keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+.class3 {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}

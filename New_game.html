@@ -5,31 +5,12 @@
     <title>Title</title>
     <script src = "Game_snake.js"></script>
     <script src="Score.js"></script>
-    <style>
-        html, body {
-            height: 100%;
-            width:100%;
-        }
-        body {
-            background-image: url("cach-lam-ran-san-moi-python-63730327155.8363.jpg");
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        canvas {
-            background: black;
-            border: 1px solid white;
-        }
-        div{
-            margin-left: 10px;
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="Game.css">
 </head>
 <body>
 <audio src="NhacNenGamePikachu-VA-4698057.mp3" autoplay loop></audio>
 <canvas width="500px" height="500px" id="game"></canvas>
-<div style="background: cadetblue">
+<div class="class3" style="background: cadetblue">
 <p id="123">Score</p>
 <p style="color: red" id="high-score">Điểm cao nhất</p>
 </div>
@@ -51,6 +32,10 @@
         x: 320,
         y: 320
     };
+    let wall = {
+        x:100,
+        y:100
+    }
     document.getElementById('high-score').innerHTML = 'Điểm cao nhất : '+ loadData();
     requestAnimationFrame(loop)
 </script>
