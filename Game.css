@@ -3,13 +3,13 @@ html, body {
     width:100%;
 }
 body {
-    background-image: url("cach-lam-ran-san-moi-python-63730327155.8363.jpg");
+    background-image: url("img/cach-lam-ran-san-moi-python-63730327155.8363.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
 }
 canvas {
-    background: black;
+    background-image: url("img/c7268a16afc881ebd831041c7a078738.jpg");
     border: 1px solid white;
 }
 div{

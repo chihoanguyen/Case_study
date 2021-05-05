@@ -48,7 +48,7 @@ function loop() {
                     saveData(snake.score);
                 }
                 alert("Game Over");
-                window.location.onload;
+                window.location.href="Index.html";
             }
         }
     });
